@@ -1,0 +1,19 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY 7seg_decoder IS
+PORT ( 
+   C0,C1 : IN STD_LOGIC;
+	HEX0: OUT STD_LOGIC_VECTOR (6 DOWNTO 0)
+	);
+END 7seg_decoder;
+
+ARCHITECTURE 7seg_decoder_arch OF 7seg_decoder IS
+BEGIN
+	case SEL is
+	when "01" =>   Z <= A;
+	when "10" =>   Z <= B;
+	when others => Z <= 'X';
+	
+end case;
+END 7seg_decoder_arch;

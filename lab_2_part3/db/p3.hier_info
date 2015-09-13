@@ -1,0 +1,136 @@
+|full4bit_adder
+SW[0] => full_adder:adder1.A
+SW[1] => full_adder:adder1.B
+SW[2] => full_adder:adder2.A
+SW[3] => full_adder:adder2.B
+SW[4] => full_adder:adder3.A
+SW[5] => full_adder:adder3.B
+SW[6] => full_adder:adder4.A
+SW[7] => full_adder:adder4.B
+SW[8] => full_adder:adder1.Ci
+S[0] <= full_adder:adder1.S
+S[1] <= full_adder:adder2.S
+S[2] <= full_adder:adder3.S
+S[3] <= full_adder:adder4.S
+Cout <= full_adder:adder4.C0
+CC[0] <= full_adder:adder1.C0
+CC[1] <= full_adder:adder2.C0
+CC[2] <= full_adder:adder3.C0
+
+
+|full4bit_adder|full_adder:adder1
+A => Equal0.IN1
+A => Equal1.IN2
+A => Equal2.IN0
+A => Equal3.IN0
+A => Equal4.IN1
+A => Equal5.IN2
+A => Equal6.IN1
+A => Equal7.IN1
+B => Equal0.IN0
+B => Equal1.IN1
+B => Equal2.IN1
+B => Equal3.IN2
+B => Equal4.IN0
+B => Equal5.IN0
+B => Equal6.IN0
+B => Equal7.IN0
+Ci => Equal0.IN2
+Ci => Equal1.IN0
+Ci => Equal2.IN2
+Ci => Equal3.IN1
+Ci => Equal4.IN2
+Ci => Equal5.IN1
+Ci => Equal6.IN2
+Ci => Equal7.IN2
+S <= X[0].DB_MAX_OUTPUT_PORT_TYPE
+C0 <= X[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full4bit_adder|full_adder:adder2
+A => Equal0.IN1
+A => Equal1.IN2
+A => Equal2.IN0
+A => Equal3.IN0
+A => Equal4.IN1
+A => Equal5.IN2
+A => Equal6.IN1
+A => Equal7.IN1
+B => Equal0.IN0
+B => Equal1.IN1
+B => Equal2.IN1
+B => Equal3.IN2
+B => Equal4.IN0
+B => Equal5.IN0
+B => Equal6.IN0
+B => Equal7.IN0
+Ci => Equal0.IN2
+Ci => Equal1.IN0
+Ci => Equal2.IN2
+Ci => Equal3.IN1
+Ci => Equal4.IN2
+Ci => Equal5.IN1
+Ci => Equal6.IN2
+Ci => Equal7.IN2
+S <= X[0].DB_MAX_OUTPUT_PORT_TYPE
+C0 <= X[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full4bit_adder|full_adder:adder3
+A => Equal0.IN1
+A => Equal1.IN2
+A => Equal2.IN0
+A => Equal3.IN0
+A => Equal4.IN1
+A => Equal5.IN2
+A => Equal6.IN1
+A => Equal7.IN1
+B => Equal0.IN0
+B => Equal1.IN1
+B => Equal2.IN1
+B => Equal3.IN2
+B => Equal4.IN0
+B => Equal5.IN0
+B => Equal6.IN0
+B => Equal7.IN0
+Ci => Equal0.IN2
+Ci => Equal1.IN0
+Ci => Equal2.IN2
+Ci => Equal3.IN1
+Ci => Equal4.IN2
+Ci => Equal5.IN1
+Ci => Equal6.IN2
+Ci => Equal7.IN2
+S <= X[0].DB_MAX_OUTPUT_PORT_TYPE
+C0 <= X[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full4bit_adder|full_adder:adder4
+A => Equal0.IN1
+A => Equal1.IN2
+A => Equal2.IN0
+A => Equal3.IN0
+A => Equal4.IN1
+A => Equal5.IN2
+A => Equal6.IN1
+A => Equal7.IN1
+B => Equal0.IN0
+B => Equal1.IN1
+B => Equal2.IN1
+B => Equal3.IN2
+B => Equal4.IN0
+B => Equal5.IN0
+B => Equal6.IN0
+B => Equal7.IN0
+Ci => Equal0.IN2
+Ci => Equal1.IN0
+Ci => Equal2.IN2
+Ci => Equal3.IN1
+Ci => Equal4.IN2
+Ci => Equal5.IN1
+Ci => Equal6.IN2
+Ci => Equal7.IN2
+S <= X[0].DB_MAX_OUTPUT_PORT_TYPE
+C0 <= X[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

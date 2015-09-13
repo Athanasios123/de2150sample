@@ -1,0 +1,4 @@
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu.sdc]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) hex_display_comp/hdl/hex_display_comp.v]
+ set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) hex_display_comp/hdl/number_to_hex_display.v]
+ set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) hex_display_comp/hex_display_comp_hw.tcl]

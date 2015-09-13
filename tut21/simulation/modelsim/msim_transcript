@@ -1,0 +1,24 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do bin2dec_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {bin2dec_7_1200mv_85c_slow.vho}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneiv_atom_pack
+# -- Loading package cycloneiv_components
+# -- Compiling entity bin2dec
+# -- Compiling architecture structure of bin2dec
+# 

@@ -1,0 +1,2 @@
+# Compile of mux.vhd was successful.
+vsim +altera -do tut1_run_msim_rtl_vhdl.do -l msim_transcript -gui mux

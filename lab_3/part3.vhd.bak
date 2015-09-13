@@ -1,0 +1,36 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY part3 IS
+PORT ( 
+	Clk, D : IN STD_LOGIC;
+	Q,Q1,Q2 : OUT STD_LOGIC
+);
+END part2;
+
+ARCHITECTURE Behaviour OF part3 IS
+COMPONENT D_Gated_Latch
+PORT ( 
+	Clk, D : IN STD_LOGIC;
+	Q : OUT STD_LOGIC
+);
+END COMPONENT;
+
+COMPONENT D_PE_flip_flop
+PORT ( 
+	Clk, D : IN STD_LOGIC;
+	Q : OUT STD_LOGIC
+);
+END COMPONENT;
+
+COMPONENT D_NE_flip_flop
+PORT ( 
+	Clk, D : IN STD_LOGIC;
+	Q : OUT STD_LOGIC
+);
+END COMPONENT;
+BEGIN
+	dgate: D_Gated_Latch PORT MAP(Clk => Clk,D => D, Q => Q);
+	dgate: D_PE_flip_flop PORT MAP(Clk => Clk,D => D, Q => Q1);
+	dgate: D_NE_flip_flop PORT MAP(Clk => Clk,D => D, Q => Q2);
+END Behaviour;

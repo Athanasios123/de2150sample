@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\12.1\tut1\simulation\modelsim
+Emux
+Z1 w1426981558
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\altera\12.1\tut1\simulation\modelsim
+Z5 8C:/altera/12.1/tut1/mux.vhd
+Z6 FC:/altera/12.1/tut1/mux.vhd
+l0
+L4
+VZ<hi5><;B_zL@5>0l;ckN0
+!s100 gUe26NcKC7a[kGd7zfTYW0
+Z7 OV;C;10.1b;51
+32
+!i10b 1
+Z8 !s108 1426982051.938000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/12.1/tut1/mux.vhd|
+Z10 !s107 C:/altera/12.1/tut1/mux.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+Amux_arch
+R2
+R3
+Z13 DEx4 work 3 mux 0 22 Z<hi5><;B_zL@5>0l;ckN0
+l13
+L12
+V=F]N6Qlfm?LnCSf@W;f:41
+!s100 KVOIjWVLU@a@5LT0;<]I^0
+R7
+32
+!i10b 1
+R8
+R9
+R10
+R11
+R12

@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY mux IS
+PORT ( 
+	X,Y,S : IN STD_LOGIC;
+	M: OUT STD_LOGIC;;
+END tut1;
+
+ARCHITECTURE mux_arch OF mux IS
+BEGIN
+
+
+M <= (NOT(S) AND X) OR (S AND Y)
+END mux_arch;

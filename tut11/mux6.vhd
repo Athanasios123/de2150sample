@@ -1,0 +1,21 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY mux6 IS
+PORT ( 
+	U,V,W,X,Y,Z: IN STD_LOGIC_VECTOR (1 DOWNTO 0);
+	S : IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+	M: OUT STD_LOGIC_VECTOR (1 DOWNTO 0)
+	);
+END mux6;
+
+ARCHITECTURE mux6_arch OF mux6 IS
+BEGIN
+	WITH S SELECT
+	M <= X WHEN "000",
+		  Y WHEN "001",
+		  Z WHEN "010",
+		  U WHEN "011",
+		  V WHEN "100",
+		  W WHEN "101";  
+END mux6_arch;

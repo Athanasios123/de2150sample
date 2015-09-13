@@ -1,0 +1,30 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY binary_2_dec_conv IS
+PORT ( 
+   SW : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+	LEDR : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+	Led_Disp0,Led_Disp1 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+	
+	);
+END binary_2_dec_conv;
+
+ARCHITECTURE Behaviour OF binary_2_dec_conv IS
+
+-- 7 seg controller
+COMPONENT seg7_4decoder 
+PORT ( 
+   C : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+	HEX0 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+	);
+END COMPONENT;
+
+BEGIN
+		-- first led display
+		H0 : seg7_4decoder PORT MAP(C => SW(7 DOWNTO 4),HEX0 => Led_Disp0);
+		-- second led display
+		H1 : seg7_4decoder PORT MAP(C => SW(3 DOWNTO 0),HEX0 => Led_Disp1);
+		-- assign leds to switches
+		LEDR <= SW;
+END Behaviour;

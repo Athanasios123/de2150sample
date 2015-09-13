@@ -1,0 +1,25 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY seg7_num_controller IS
+PORT ( 
+   SW : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
+	LEDR : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
+	Led_Disp0,Led_Disp1 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+	
+	);
+END seg7_decoder;
+
+ARCHITECTURE seg7_decoder_arch OF seg7_decoder IS
+BEGIN
+process(C)
+	begin
+		case C is
+			when "00" =>   HEX0 <= "0011110";-- litera d
+			when "01" =>   HEX0 <= "1111001";-- litera E
+			when "10" =>   HEX0 <= "0000110";-- litera 1
+			when "11" =>   HEX0 <= "0000000";-- pusty
+         when others => HEX0 <= "0000001";-- blad  
+		end case;
+end process;
+END seg7_decoder_arch;

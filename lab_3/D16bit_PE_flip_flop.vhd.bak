@@ -1,0 +1,20 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY D16bit_PE_flip_flop IS
+PORT ( 
+	Clk : IN STD_LOGIC;--key 0 
+	D16 : IN STD_LOGIC_VECTOR(15 DOWNTO 0)
+	Q16 : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+);
+END D16bit_PE_flip_flop;
+
+ARCHITECTURE Structural OF D16bit_PE_flip_flop IS
+BEGIN
+	process(D,Clk)
+		begin
+			if(rising_edge(Clk)) then
+				Q <= D;
+			end if;
+	end process;
+END Structural;

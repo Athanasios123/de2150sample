@@ -1,0 +1,44 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY part5 IS
+PORT ( 
+	SW : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+	KEY : IN STD_LOGIC_VECTOR(1 DOWNTO 0);--KEY 0 - CLK, KEY 1 - RESET
+);
+END part5;
+
+ARCHITECTURE Behaviour OF part2 IS
+
+-- rising_edge flip flop
+ENTITY D16bit_PE_flip_flop IS
+PORT ( 
+	Clk : IN STD_LOGIC;--key 0 
+	D16 : IN STD_LOGIC_VECTOR(15 DOWNTO 0);-- SW 15 - 0
+	Reset : IN STD_LOGIC;-- key 1
+	Q16 : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)-- 4 7seg input A
+);
+END D16bit_PE_flip_flop;
+
+-- falling_edge flip flop
+ENTITY D16bit_NE_flip_flop IS
+PORT ( 
+	Clk : IN STD_LOGIC;--key 0 
+	D16 : IN STD_LOGIC_VECTOR(15 DOWNTO 0);-- SW 15 - 0
+	Reset : IN STD_LOGIC; -- key 1
+	Q16 : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)-- 4 7seg input B - new value is being set during  high clk and saved when falling_edge of clk
+);
+END D16bit_NE_flip_flop;
+
+--7seg decoder
+ENTITY seg_7_hex_dec IS
+PORT ( 
+   C : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+	HEX : OUT STD_LOGIC_VECTOR(6 DOWNTO 0)
+	);
+END seg7_4decoder;
+SIGNAL A,B : STD_LOGIC_VECTOR(15 DOWNTO 0);
+BEGIN
+	A: part1 PORT MAP(Clk => Clk,D => D, Q => Qm);
+	slave: part1 PORT MAP(Clk => Clk,D => Qm, Q => Q);
+END Behaviour;

@@ -1,0 +1,94 @@
+# vsim +altera -do tut1_run_msim_rtl_vhdl.do -l msim_transcript -gui mux 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux(mux_arch)
+# do tut1_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying C:/altera/12.1/tut1/simulation/modelsim/sim_mux.mpf
+# 
+# vcom -93 -work work {C:/altera/12.1/tut1/tut1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tut1
+# -- Compiling architecture Behavior of tut1
+# 
+add wave -position end  sim:/mux/X
+add wave -position end  sim:/mux/Y
+add wave -position end  sim:/mux/S
+add wave -position end  sim:/mux/M
+force -freeze sim:/mux/X(3) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mux/X(2) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mux/X(1) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mux/X(0) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/mux/Y(3) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/mux/Y(2) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/mux/Y(1) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/mux/Y(0) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/mux/S 1 0, 0 {50 ps} -r 100
+run
+run
+run
+force -freeze sim:/mux/X(3) 1 0, 0 {70 ps} -r 100
+run
+run
+force -freeze sim:/mux/X(3) 1 0, 0 {70 ps} -r 100
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/altera/12.1/tut1/simulation/modelsim/wave.do
+run
+run
+run
+force -freeze sim:/mux/S 1 0, 0 {100 ps} -r 200
+run
+run
+run
+run
+force -freeze sim:/mux/S 1 0, 0 {180 ps} -r 200
+run
+run
+run
+force -freeze sim:/mux/S 1 0, 0 {200 ps} -r 1000
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/mux/S
+force -freeze sim:/mux/S1 1 0, 0 {127 ps} -r 255
+# ** Error: (vish-4008) Object 'sim:/mux/S1' not found.
+# 
+run
+run
+run
+force -freeze sim:/mux/S 1 0, 0 {45 ps} -r 90
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

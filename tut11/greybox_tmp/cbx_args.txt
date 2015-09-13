@@ -1,0 +1,16 @@
+IMPLEMENT_INPUT_IN_LCELL=OFF
+INTENDED_DEVICE_FAMILY="Cyclone IV GX"
+INVERT_OUTPUT=OFF
+LPM_HINT=UNUSED
+LPM_TYPE=altddio_bidir
+WIDTH=8
+DEVICE_FAMILY="Cyclone IV GX"
+CBX_AUTO_BLACKBOX=ALL
+aclr
+datain_h
+datain_l
+dataout_h
+dataout_l
+inclock
+outclock
+padio

@@ -1,0 +1,18 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY full_adder IS
+PORT ( 
+   A,B,Ci : IN STD_LOGIC;
+	S,C0 : OUT STD_LOGIC
+	);
+END full_adder;
+
+ARCHITECTURE Behaviour OF 7seg_decoder IS
+BEGIN
+	C0 <= (A AND Ci) OR (B AND Ci) OR (B AND A AND NOT(Ci));
+	S <= (B AND NOT(A) AND NOT(Ci)) OR 
+	NOT(B) AND NOT(A) AND Ci) OR 
+	(B AND NOT(A) AND NOT(Ci)) OR 
+	(B AND NOT(A) AND NOT(Ci));
+END Behaviour;

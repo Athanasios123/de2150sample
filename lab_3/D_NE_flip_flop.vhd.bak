@@ -1,0 +1,21 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY D_NE_flip_flop IS
+PORT ( 
+	Clk, D : IN STD_LOGIC;
+	Q : OUT STD_LOGIC
+);
+END D_PE_flip_flop;
+
+ARCHITECTURE Structural OF D_D_PE_flip_flop IS
+SIGNAL pClk : STD_LOGIC = '0';
+BEGIN
+	process(D,Clk)
+		begin
+			if(Clk = '0' AND pClk = '1') then
+				Q <= D;
+			end if;
+			pClk <= Clk;
+	end process;
+END Structural;

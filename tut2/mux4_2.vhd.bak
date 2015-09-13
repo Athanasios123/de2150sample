@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY mux4_2 IS
+PORT ( 
+   C0,C1 : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+	Z: IN STD_LOGIC;
+	M : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+	);
+END mux4_2 ;
+
+ARCHITECTURE mux4_2 _arch OF mux4_2  IS
+BEGIN
+	M <= NOT(Z)
+END seg7_4decoder_arch;

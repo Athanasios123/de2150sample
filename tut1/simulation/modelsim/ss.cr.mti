@@ -1,0 +1,11 @@
+C:/altera/12.1/tut1/mux.vhd {2 {vcom -work work -2002 -explicit C:/altera/12.1/tut1/mux.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux
+-- Compiling architecture mux_arch of mux
+** Warning: [2] C:/altera/12.1/tut1/mux.vhd(19): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+
+
+} {} {}}

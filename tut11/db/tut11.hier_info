@@ -1,0 +1,185 @@
+|part5
+SW[0] => mux3:U0.W[0]
+SW[0] => mux3:U1.V[0]
+SW[0] => mux3:U2.U[0]
+SW[0] => LEDR[0].DATAIN
+SW[1] => mux3:U0.W[1]
+SW[1] => mux3:U1.V[1]
+SW[1] => mux3:U2.U[1]
+SW[1] => LEDR[1].DATAIN
+SW[2] => mux3:U0.V[0]
+SW[2] => mux3:U1.U[0]
+SW[2] => mux3:U2.W[0]
+SW[2] => LEDR[2].DATAIN
+SW[3] => mux3:U0.V[1]
+SW[3] => mux3:U1.U[1]
+SW[3] => mux3:U2.W[1]
+SW[3] => LEDR[3].DATAIN
+SW[4] => mux3:U0.U[0]
+SW[4] => mux3:U1.W[0]
+SW[4] => mux3:U2.V[0]
+SW[4] => LEDR[4].DATAIN
+SW[5] => mux3:U0.U[1]
+SW[5] => mux3:U1.W[1]
+SW[5] => mux3:U2.V[1]
+SW[5] => LEDR[5].DATAIN
+SW[6] => LEDR[6].DATAIN
+SW[7] => LEDR[7].DATAIN
+SW[8] => mux3:U0.S[0]
+SW[8] => mux3:U1.S[0]
+SW[8] => mux3:U2.S[0]
+SW[8] => LEDR[8].DATAIN
+SW[9] => mux3:U0.S[1]
+SW[9] => mux3:U1.S[1]
+SW[9] => mux3:U2.S[1]
+SW[9] => LEDR[9].DATAIN
+LEDR[0] <= SW[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= SW[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= SW[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= SW[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= SW[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= SW[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= SW[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= SW[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[8] <= SW[8].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[9] <= SW[9].DB_MAX_OUTPUT_PORT_TYPE
+Led_Disp0[6] <= seg7_decoder:H0.HEX0[0]
+Led_Disp0[5] <= seg7_decoder:H0.HEX0[1]
+Led_Disp0[4] <= seg7_decoder:H0.HEX0[2]
+Led_Disp0[3] <= seg7_decoder:H0.HEX0[3]
+Led_Disp0[2] <= seg7_decoder:H0.HEX0[4]
+Led_Disp0[1] <= seg7_decoder:H0.HEX0[5]
+Led_Disp0[0] <= seg7_decoder:H0.HEX0[6]
+Led_Disp1[6] <= seg7_decoder:H1.HEX0[0]
+Led_Disp1[5] <= seg7_decoder:H1.HEX0[1]
+Led_Disp1[4] <= seg7_decoder:H1.HEX0[2]
+Led_Disp1[3] <= seg7_decoder:H1.HEX0[3]
+Led_Disp1[2] <= seg7_decoder:H1.HEX0[4]
+Led_Disp1[1] <= seg7_decoder:H1.HEX0[5]
+Led_Disp1[0] <= seg7_decoder:H1.HEX0[6]
+Led_Disp2[6] <= seg7_decoder:H2.HEX0[0]
+Led_Disp2[5] <= seg7_decoder:H2.HEX0[1]
+Led_Disp2[4] <= seg7_decoder:H2.HEX0[2]
+Led_Disp2[3] <= seg7_decoder:H2.HEX0[3]
+Led_Disp2[2] <= seg7_decoder:H2.HEX0[4]
+Led_Disp2[1] <= seg7_decoder:H2.HEX0[5]
+Led_Disp2[0] <= seg7_decoder:H2.HEX0[6]
+
+
+|part5|mux3:U0
+U[0] => M0.IN0
+U[1] => M0.IN0
+V[0] => M0.IN0
+V[1] => M0.IN0
+W[0] => M.IN0
+W[1] => M.IN0
+S[0] => M0.IN1
+S[0] => M0.IN1
+S[0] => M0.IN1
+S[0] => M0.IN1
+S[1] => M.IN1
+S[1] => M.IN1
+S[1] => M.IN1
+S[1] => M.IN1
+M[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|mux3:U1
+U[0] => M0.IN0
+U[1] => M0.IN0
+V[0] => M0.IN0
+V[1] => M0.IN0
+W[0] => M.IN0
+W[1] => M.IN0
+S[0] => M0.IN1
+S[0] => M0.IN1
+S[0] => M0.IN1
+S[0] => M0.IN1
+S[1] => M.IN1
+S[1] => M.IN1
+S[1] => M.IN1
+S[1] => M.IN1
+M[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|mux3:U2
+U[0] => M0.IN0
+U[1] => M0.IN0
+V[0] => M0.IN0
+V[1] => M0.IN0
+W[0] => M.IN0
+W[1] => M.IN0
+S[0] => M0.IN1
+S[0] => M0.IN1
+S[0] => M0.IN1
+S[0] => M0.IN1
+S[1] => M.IN1
+S[1] => M.IN1
+S[1] => M.IN1
+S[1] => M.IN1
+M[0] <= M.DB_MAX_OUTPUT_PORT_TYPE
+M[1] <= M.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|seg7_decoder:H0
+C[0] => Mux0.IN5
+C[0] => Mux1.IN5
+C[0] => Mux2.IN5
+C[0] => HEX0[2].DATAIN
+C[0] => HEX0[1].DATAIN
+C[1] => Mux0.IN4
+C[1] => Mux1.IN4
+C[1] => Mux2.IN4
+C[1] => HEX0[4].DATAIN
+C[1] => HEX0[3].DATAIN
+HEX0[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|seg7_decoder:H1
+C[0] => Mux0.IN5
+C[0] => Mux1.IN5
+C[0] => Mux2.IN5
+C[0] => HEX0[2].DATAIN
+C[0] => HEX0[1].DATAIN
+C[1] => Mux0.IN4
+C[1] => Mux1.IN4
+C[1] => Mux2.IN4
+C[1] => HEX0[4].DATAIN
+C[1] => HEX0[3].DATAIN
+HEX0[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part5|seg7_decoder:H2
+C[0] => Mux0.IN5
+C[0] => Mux1.IN5
+C[0] => Mux2.IN5
+C[0] => HEX0[2].DATAIN
+C[0] => HEX0[1].DATAIN
+C[1] => Mux0.IN4
+C[1] => Mux1.IN4
+C[1] => Mux2.IN4
+C[1] => HEX0[4].DATAIN
+C[1] => HEX0[3].DATAIN
+HEX0[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= C[0].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= C[1].DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

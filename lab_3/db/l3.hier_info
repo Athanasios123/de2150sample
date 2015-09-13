@@ -1,0 +1,23 @@
+|part2
+Clk => part1:master.Clk
+Clk => part1:slave.Clk
+D => part1:master.D
+Q <= part1:slave.Q
+
+
+|part2|part1:master
+Clk => R_g.IN1
+Clk => S_g.IN0
+D => S_g.IN1
+D => R.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|part1:slave
+Clk => R_g.IN1
+Clk => S_g.IN0
+D => S_g.IN1
+D => R.DATAIN
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
